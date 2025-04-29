@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Documento sin título</title>
+		<style type="text/css">
+			h1
+			{
+				font-family: "Arial"
+				font-size: 60px;
+				color:#00F;
+				text-align:center;		
+			}
+			p1
+			{
+				font-family: "Calibri";
+				font-size: 20px;
+				color:#F0F;
+			}			
+		body {
+	background-color: #999;
+}
+        </style>
+</head>
+	
+	<body>
+		<table width="1020" border="1" align="center">
+		  <tr>
+		    <td><img src="imagenes/CURRICULUM.png" width="1020" height="300" alt="tatata" /></td>
+	      </tr>
+    </table>
+		<h1>INICIAR SESION </h1>
+        <form name="login" align="center">
+          <p1> Usuario </p1>
+            <input type="text" name="nombre" align="center" />
+            <p1> Contraseña </p1>
+            <input type="password" name="clave" />
+            <input type="button" onclick="check(this.form)" value="Aceptar" />
+          <table width="1020" border="1" align="center">
+   	          <tr>
+   	            <td><img src="imagenes/curri vita.png" width="1020" height="300" alt="taka" /></td>
+            </tr>
+          </table>
+    </form> 
+        <script language="javascript">
+			function check(form)
+			{
+				if(form.nombre.value=="Rodrigo" && form.clave.value=="123123")
+				
+					window.open('index1.html')
+				
+				else
+					alert("Error: La contraseña o el usuario es incorrecto")
+			}	
+		</script>      
+	</body>
+</html>
